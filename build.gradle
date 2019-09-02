@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'nms'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile "com.influxdb:influxdb-client-java:1.0.0-SNAPSHOT"
+}
